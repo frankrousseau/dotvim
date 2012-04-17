@@ -1,8 +1,9 @@
 This project is a Vim configuration Python and Django dedicated.
+Add modules for coffeescript, stylus and jade.
 
 Installation:
 
-    git clone git://github.com/tcolombo/dotvim.git ~/.vim
+    git clone git@github.com:frankrousseau/dotvim.git ~/.vim
 
 
 Create symlink:
@@ -30,3 +31,6 @@ Compile command-t:
 
     cd ~/.vim/bundle/command-t
     rake make
+
+
+Fork from : git://github.com/tcolombo/dotvim.git
