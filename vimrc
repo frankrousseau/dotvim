@@ -10,11 +10,14 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=8
 " Activation de la détection automatique du type de fichier
+" Rechargement du file type
+filetype off
 filetype on
 filetype plugin indent on
 
 " Longueur maximale des lignes
 set textwidth=79
+
 
 " Activation de la coloration syntaxique
 syntax on
@@ -105,8 +108,8 @@ function! CleanCode()
 endfunction
 
 " Affichage des numéros de ligne
-set number
-highlight LineNr ctermbg=blue ctermfg=gray
+" set number
+" highlight LineNr ctermbg=blue ctermfg=gray
 
 " Surligne la colonne du dernier caractère autorisé par textwidth
 set cc=+1
@@ -118,3 +121,6 @@ function! s:CursorOldPosition()
   endif
 endfunction
 autocmd BufReadPost * silent! call s:CursorOldPosition()
+
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+
