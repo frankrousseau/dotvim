@@ -122,5 +122,14 @@ function! s:CursorOldPosition()
 endfunction
 autocmd BufReadPost * silent! call s:CursorOldPosition()
 
+" Ctrl-s pour sauvegarder
+nmap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
+
+" Improve search
+set smartcase
+set incsearch
+
+" Enable coffee script folding
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
