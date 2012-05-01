@@ -67,3 +67,9 @@
 [submodule "bundle/vim-stylus"]
 	path = bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus
+[submodule "vim-indent"]
+	path = bundle/vim-indent
+	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule "bundle/vim-args"]
+	path = bundle/vim-args
+	url = https://github.com/vim-scripts/argtextobj.vim.git
