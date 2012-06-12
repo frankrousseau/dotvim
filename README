@@ -13,8 +13,7 @@ Create symlink:
 
 Install packages:
 
-    sudo aptitude install git pep8 exuberant-ctags python-rope ruby1.8-dev
-                          rake
+    sudo aptitude install git pep8 exuberant-ctags python-rope 
 
 
 Switch to the `~/.vim` directory, and fetch submodules:
@@ -27,10 +26,4 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule foreach git submodule update
     
     
-Compile command-t:
-
-    cd ~/.vim/bundle/command-t
-    rake make
-
-
 Fork from : git://github.com/tcolombo/dotvim.git
