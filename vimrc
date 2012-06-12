@@ -133,3 +133,19 @@ set incsearch
 " Enable coffee script folding
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
+" Bubble single lines
+nmap <Up> ddkP
+nmap <Down> ddp
+imap <Up> <Esc>ddkPi
+imap <Down> <Esc>ddpi
+nmap <Left> <<
+nmap <Right> >>
+imap <Left> <<
+imap <Right> >>
+
+
+" Bubble multiple lines
+vmap <Up> xkP`[V`]
+vmap <Down> xp`[V`]
+
+
