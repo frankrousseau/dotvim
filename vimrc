@@ -140,12 +140,13 @@ imap <Up> <Esc>ddkPi
 imap <Down> <Esc>ddpi
 nmap <Left> <<
 nmap <Right> >>
-imap <Left> <<
-imap <Right> >>
+imap <Left> <Esc><<i
+imap <Right> <Esc>>>i
+vmap <Left> <<
+vmap <Right> >>
 
 
 " Bubble multiple lines
 vmap <Up> xkP`[V`]
 vmap <Down> xp`[V`]
-
 
