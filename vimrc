@@ -150,3 +150,7 @@ vmap <Right> >>
 vmap <Up> xkP`[V`]
 vmap <Down> xp`[V`]
 
+" Make , as leader key
+:let mapleader = ","
+nnoremap <silent> <F7> :NERDTreeToggle<CR>
+nnoremap <silent> <F6> :Gcommit<CR>
