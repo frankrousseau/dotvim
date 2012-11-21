@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/frankrousseau/mycloud/products/cozy-todos/app/models'
-let g:netrw_dirhist_2='/home/frankrousseau/mycloud/products/cozy-data-system/app/controllers'
-let g:netrw_dirhist_3='/home/frankrousseau/mycloud/products/cozy-it/proxy-setup'
-let g:netrw_dirhist_4='/home/frankrousseau/mycloud/products/cozy-template/config/initializers'
-let g:netrw_dirhist_5='/home/frankrousseau/mycloud/blog/.git'
-let g:netrw_dirhist_6='/home/frankrousseau/mycloud/products/cozy-it/maintenance/patchs'
