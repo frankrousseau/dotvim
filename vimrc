@@ -154,3 +154,6 @@ vmap <Down> xp`[V`]
 :let mapleader = ","
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
 nnoremap <silent> <F6> :Gcommit<CR>
+
+nnoremap u i
+nnoremap z u
