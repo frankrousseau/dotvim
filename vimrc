@@ -4,6 +4,10 @@ call pathogen#helptags()
 
 " Activation de l'indentation automatique
 set autoindent
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 " Redéfinition des tabulations
 set expandtab
 set shiftwidth=4
@@ -145,15 +149,45 @@ imap <Right> <Esc>>>i
 vmap <Left> <<
 vmap <Right> >>
 
-
 " Bubble multiple lines
 vmap <Up> xkP`[V`]
 vmap <Down> xp`[V`]
 
 " Make , as leader key
-:let mapleader = ","
+let mapleader = ","
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
 nnoremap <silent> <F6> :Gcommit<CR>
 
 nnoremap u i
 nnoremap z u
+
+" search text in different files
+nnoremap gr :grep <cword> *<CR>
+
+" Autosave
+map <Esc><Esc> :w<CR>
+
+nmap <F3> :update<CR>
+vmap <F3> <Esc><F3>gv
+imap <F3> <c-o><F3>
+
+
+set autowrite
+au FocusLost * :wa
+
+au BufRead,BufNewFile * let b:start_time=localtime()
+au CursorHold * call UpdateFile()
+" only write if needed and update the start time after the save
+function! UpdateFile()
+  if ((localtime() - b:start_time) >= 60)
+    update
+    let b:start_time=localtime()
+  else
+    echo "Only " . (localtime() - b:start_time) . " seconds have elapsed so far."
+  endif
+endfunction
+au BufWritePre * let b:start_time=localtime()
+
+
+" Colors
+:colorscheme ir_black

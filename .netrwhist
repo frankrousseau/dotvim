@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/frankrousseau/mycloud/products/cozy-mails/app/models'
+let g:netrw_dirhist_2='/home/frankrousseau/mycloud/products/cozywebsite/apps/profile/management'
+let g:netrw_dirhist_3='/home/frankrousseau/mycloud/products/external/boonk/app'
+let g:netrw_dirhist_4='/home/frankrousseau/mycloud/products/cozy-notes/client/app/assets'
+let g:netrw_dirhist_5='/home/frankrousseau/mycloud/products/external/ruby-helloworld/config'
+let g:netrw_dirhist_6='/home/frankrousseau/mycloud/products/cozy-mails/config/initializers'
+let g:netrw_dirhist_7='/home/frankrousseau/mycloud/products/cozy-data-system/config/initializers'

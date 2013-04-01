@@ -49,9 +49,9 @@ function! DjangoDoc()
 endfunction
 
 " Definition of the shortkey
-if !hasmapto('<Plug>DjangoDoc')
-  map <unique> <F2> <Plug>DjangoDoc
-endif
+"if !hasmapto('<Plug>DjangoDoc')
+"  map <unique> <F2> <Plug>DjangoDoc
+"endif
 
 nnoremap <unique> <script> <Plug>DjangoDoc :call DjangoDoc()<CR>
 " }}}

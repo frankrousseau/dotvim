@@ -34,6 +34,22 @@ snippet tryf
 	finally
 		${4}
 
+snippet describe
+	describe "${1:#desc}", ->
+	    it "${2:#it}", ->
+
+snippet describebefore
+	describe "${1:#desc}", ->
+
+	    before (done) ->
+	        done()
+		
+	    it "${2:#it}", ->
+
+snippet itdone
+	it "${1:#it}", (done) ->
+
+
 snippet class class
 	class ${1:ClassName}
 		constructor: (${2:arguments})->
