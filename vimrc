@@ -3,16 +3,16 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " Activation de l'indentation automatique
-set autoindent
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
 " Redéfinition des tabulations
+set autoindent
 set expandtab
 set shiftwidth=4
 set softtabstop=4
-set tabstop=8
+set tabstop=4
 " Activation de la détection automatique du type de fichier
 " Rechargement du file type
 filetype off
