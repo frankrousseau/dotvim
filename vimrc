@@ -188,6 +188,10 @@ function! UpdateFile()
 endfunction
 au BufWritePre * let b:start_time=localtime()
 
-
 " Colors
 :colorscheme ir_black
+
+"relive trailing whitespaces
+autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.coffee :%s/\s\+$//e
+autocmd BufWritePre *.js :%s/\s\+$//e

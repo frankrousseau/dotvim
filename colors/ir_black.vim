@@ -11,7 +11,7 @@
 "  string: #A8FF60  168:255:96                   
 "    string inner (punc, code, etc): #00A0A0  0:160:160
 "  number: #FF73FD  255:115:253                 
-"  comments: #7C7C7C  124:124:124
+"  comments: #CCCCCC  124:124:124
 "  keywords: #96CBFE  150:203:254             
 "  operators: white
 "  class: #FFFFB6  255:255:182
@@ -103,8 +103,8 @@ if version >= 700 " Vim 7.x specific colors
   hi Search         guifg=NONE        guibg=#2F2F00     gui=underline ctermfg=NONE        ctermbg=NONE	      cterm=underline
 endif
 
+hi Comment          guifg=#CCCCCC     guibg=NONE        gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
 " Syntax highlighting
-hi Comment          guifg=#7C7C7C     guibg=NONE        gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
 hi String           guifg=#A8FF60     guibg=NONE        gui=NONE      ctermfg=green       ctermbg=NONE        cterm=NONE
 hi Number           guifg=#FF73FD     guibg=NONE        gui=NONE      ctermfg=magenta     ctermbg=NONE        cterm=NONE
 
