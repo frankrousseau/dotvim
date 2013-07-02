@@ -103,7 +103,7 @@ if version >= 700 " Vim 7.x specific colors
   hi Search         guifg=NONE        guibg=#2F2F00     gui=underline ctermfg=NONE        ctermbg=NONE	      cterm=underline
 endif
 
-hi Comment          guifg=#CCCCCC     guibg=NONE        gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
+hi Comment          guifg=#CCCCCC     guibg=NONE        gui=NONE      ctermfg=LightGray    ctermbg=NONE        cterm=NONE
 " Syntax highlighting
 hi String           guifg=#A8FF60     guibg=NONE        gui=NONE      ctermfg=green       ctermbg=NONE        cterm=NONE
 hi Number           guifg=#FF73FD     guibg=NONE        gui=NONE      ctermfg=magenta     ctermbg=NONE        cterm=NONE
