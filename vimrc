@@ -29,6 +29,9 @@ syntax on
 " Lecture des raccourcis clavier généraux
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
 
+" Coloration YAML
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
+
 " Activation de la complétion pour les fichiers python
 au FileType python set omnifunc=pythoncomplete#Complete
 " Activation de la complétion pour les fichiers javascript
