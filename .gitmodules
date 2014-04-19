@@ -73,3 +73,6 @@
 [submodule "bundle/vim-args"]
 	path = bundle/vim-args
 	url = https://github.com/vim-scripts/argtextobj.vim.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/tomasr/molokai.git
