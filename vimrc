@@ -13,6 +13,7 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
+
 " Activation de la détection automatique du type de fichier
 " Rechargement du file type
 filetype off
@@ -198,3 +199,6 @@ au BufWritePre * let b:start_time=localtime()
 autocmd BufWritePre *.py :%s/\s\+$//e
 autocmd BufWritePre *.coffee :%s/\s\+$//e
 autocmd BufWritePre *.js :%s/\s\+$//e
+
+" Exception pour les fichier js
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
