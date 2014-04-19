@@ -193,7 +193,8 @@ endfunction
 au BufWritePre * let b:start_time=localtime()
 
 " Colors
-:colorscheme ir_black
+" colorscheme ir_black
+colorscheme molokai
 
 "relive trailing whitespaces
 autocmd BufWritePre *.py :%s/\s\+$//e
@@ -202,3 +203,39 @@ autocmd BufWritePre *.js :%s/\s\+$//e
 
 " Exception pour les fichier js
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
+" Experiments
+"
+"
+set number " numero de ligne
+set cursorline " highlight de la ligne courante
+set wildmenu " menu d'autocompletion pour les fichiers
+set lazyredraw " ne recalcule pas toujours tout
+set showmatch " match les parentheses
+set incsearch " recherche incrémentale
+set hlsearch " highilight search matches
+nnoremap <leader><space> :nohlsearch<CR> " remove search highlight
+
+" folding
+set foldenable 
+set foldlevelstart=10
+set foldnestmax=10
+nnoremap <space> za
+set foldmethod=indent
+
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
+nnoremap B ^
+nnoremap E $
+nnoremap gV `[v`]
+inoremap jk <esc>
+
+" Utilitaires de recheche CtrlP + ag
+nnoremap <leader>a :Ag 
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
